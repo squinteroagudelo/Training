@@ -1,0 +1,105 @@
+/*
+Selectores CSS
+Cascading Style Sheets
+Son los métodos, formas o maneras de identificar los elementos HTML para darle estilo o apariencia
+
+- Selector de etiqueta:
+toman el nombre del elemento HTML (input, i, body, html, div, nav , ...)
+
+- Selectores de clase:
+Identifican a los elementos por su atributo clase (.). Tener en cuenta que una clase puede identificar varios elementos.
+Por ejemplo:
+<div class="cuerpo"> ----> .cuerpo
+
+- Selectores de id:
+Identifican cada elementos por su identificador (#). Tener en cuenta que el id es único para cada elemento.
+Por ejemplo:
+<div class="cuerpo overwrite" id="principal"> ----> #principal
+
+PRIORIDAD DE SELECTORES:
+
+etiqueta < clase < id < !Important
+
+div{background: red;}
+.cuerpo{background: green;} ---> Bootstrap
+#cuerpo{background: blue;}
+.overwrite{background: grey !Important;}
+
+Regla CSS:
+La asignación de ciertas características de apariencia sobre un elemento.
+
+Partes de una regla CSS:
+- Selector: identificador del elemento (etiqueta, clase, id)
+- Atributo: hace referencia a la propiedad que se desea asignar o modificar (color, backgroun-color, font-size)
+- Valor: valor asignado al atributo (red / rgb(255,0,0) / rgba(255,0,0, < [0 - 1] (0.0 - 1.0) por ejemplo: 0.5 >) / #FF0000; green; 1rem)
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+- Elementos de bloque: ocupan por defecto el ancho de su elemento contenedor.
+    div...section...article...
+- Elementos en línea: ocupan por defecto el ancho de su contenido.
+    span...small...input...
+*/
+
+header{
+    background: aqua;
+    height: 30px;
+    margin: 5px;
+}
+
+main{
+    background: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    float: right;
+    height: 600px;
+    margin: 5px;
+    width: 70%;
+}
+
+aside{
+    background: brown;
+    display: flex;
+    float: left;
+    height: 600px;
+    margin: 5px;
+    width: 25%;
+}
+
+footer{
+    background: darkgreen;
+    clear: both;
+    height: 50px;
+    margin: 5px;
+}
+
+main section{
+    background: gray;
+    height: 50px;
+    width: 90%;
+}
+
+main section article{
+    background: bisque;
+    border: double 1px orangered;
+    display: inline-block;
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.article{
+    background: fuchsia;
+}
+
+#article{
+    background: orangered;
+}
