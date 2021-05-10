@@ -46,7 +46,7 @@ body{
     span...small...input...
 */
 
-header{
+/*header{
     background: aqua;
     height: 30px;
     margin: 5px;
@@ -87,7 +87,7 @@ main section{
 }
 
 main section article{
-    background: bisque;
+    background: bisque !important;
     border: double 1px orangered;
     display: inline-block;
     height: 40px;
@@ -102,4 +102,26 @@ main section article{
 
 #article{
     background: orangered;
+}*/
+
+/*Bootstrap*/
+header{
+    /*height: 10vh;*/
+}
+
+aside{
+    height: 77.92vh;
+}
+
+main{
+    height: 77.92vh;
+}
+
+article div{
+    height: 5rem;
+    width: 5rem;
+}
+
+footer{
+    height: 10vh;
 }
