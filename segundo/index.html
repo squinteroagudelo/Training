@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<title>Title</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style>
+		ul li {
+			list-style: none;
+		}
+
+		ul li::before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f55f";
+			margin-right: .2rem;
+			color: darkgreen;
+		}
+
+		ul li::after {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f595";
+			margin-left: .2rem;
+			color: darkolivegreen;
+		}
+
+		ol li {
+			list-style-type: upper-roman;
+		}
+
+		span {
+			border: solid 2px darkred;
+		}
+
+		table {
+			border: solid 1px #000;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			border: solid 1px #000;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav></nav>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<!--Etiquetas de encabezados (Títulos)-->
+
+				<h1 id="h1">formulario h1</h1>
+				<h2 id="h2">Formulario h2</h2>
+				<h3>Formulario h3</h3>
+				<h4>Formulario h4</h4>
+				<h5>Formulario h5</h5>
+				<h6>Formulario h6</h6>
+				<h2>Formulario h2</h2>
+				<h3>Formulario h3</h3>
+				<h4>Formulario h4</h4>
+				<h5>Formulario h5</h5>
+				<h6>Formulario h6</h6>
+				<h2>Formulario h2</h2>
+				<h3>Formulario h3</h3>
+				<h4>Formulario h4</h4>
+				<h5>Formulario h5</h5>
+				<h6>Formulario h6</h6>
+				<h2>Formulario h2</h2>
+				<h3>Formulario h3</h3>
+				<h4>Formulario h4</h4>
+				<h5>Formulario h5</h5>
+				<h6>Formulario h6</h6>
+
+				<!-- Etiqueta form -->
+
+				<form action="index.html" method="post" class="form-row" id="form">
+					<fieldset>
+						<lengend>Datos Ingreso</lengend>
+						<div class="form-group">
+							<label for="name">Nombre:</label>
+							<input type="text" name="name" id="name" placeholder="Ingresa tu nombre" list="nombres">
+							<datalist id="nombres">
+								<option value="miguel"></option>
+								<option value="juan"></option>
+								<option value="jesús"></option>
+								<option value="andres"></option>
+								<option value="sebastian"></option>
+							</datalist>
+						</div>
+						<div class="form-group">
+							<label for="passwd">Contraseña:</label>
+							<input type="password" name="passwd" id="passwd" placeholder="**********">
+						</div>
+						<div class="form-group">
+							<label for="commentary">Comentarios:</label>
+							<textarea name="commentary" id="commentary" placeholder="Escribe..."></textarea>
+							<small>Cuéntame tus opiniones sobre mi</small>
+						</div>
+						<div class="form-group">
+							<label for="commentary">Sexo:</label>
+							<select name="sexo" id="sexo" class="form-control form-select">
+								<option value="0" selected disabled>Seleccionar...</option>
+								<optgroup label="Humanos">
+									<option value="m">Masculino</option>
+									<option value="f">Femenino</option>
+								</optgroup>
+								<optgroup label="Animales">
+									<option value="m">Machos</option>
+									<option value="f">Hembras</option>
+								</optgroup>
+								<optgroup label="Neutros">
+									<option value="m">Ninguno</option>
+								</optgroup>
+							</select>
+
+						</div>
+						<input type="submit" value="Enviar con input">
+						<button type="submit">Enviar con botón <i class="fas fa-upload"></i></button>
+					</fieldset>
+				</form>
+
+				<!--Listas-->
+				<!--Listas no ordenadas (ul)-->
+				<!--<ul class="list-group">
+					<li class="list-group-item">Arroz</li>
+					<li class="list-group-item">Panela</li>
+					<li class="list-group-item">Café</li>
+					<li class="list-group-item">Azúcar</li>
+				</ul>-->
+
+				<!--Listas ordenadas (ol)-->
+				<!--<ol class="list-group">
+					<li class="list-group-item">Rascarlo</li>
+					<li class="list-group-item">Preparar el smoking</li>
+					<li class="list-group-item">Armarlo</li>
+					<li class="list-group-item">Pegarlo con saliva</li>
+					<li class="list-group-item">Préndalo</li>
+					<li class="list-group-item">Rótelo</li>
+					<li class="list-group-item">Guarde la pata para armar uno que lo que más traba</li>
+				</ol>-->
+
+				<!--Listas descriptivas (dl)-->
+				<!--<dl class="list-group">
+					<dt>Marihuana</dt>
+					<dd>Son dos hermanas la una es Mary y la aotra es Huana</dd>
+					<dd>La planta de la alegría</dd>
+					<dd>La musa de los artistas</dd>
+
+					<dt>Coca</dt>
+					<dd>La mata que mata</dd>
+				</dl>-->
+
+				<!--<span style="margin-right: .2em">
+				<span>hfhghj
+				<span>hfhghjfghfvhvg
+				<span>hfhghjfghfvhvgvhghgvg
+				<span>
+					<i class="fas fa-times"></i>
+
+				<span>
+					<i class="fas fa-times"></i><i class="fas fa-user"></i>
+
+
+				<!--Tablas-->
+				<table>
+					<thead>
+						<tr>
+							<th>Número</th>
+							<th>Nombre</th>
+							<th>Ciudad</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>
+								<a href="https://es.wikipedia.org/wiki/Miguel" target="blank">Miguel</a>
+							</td>
+							<td>Allá</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>
+								<a href="https://es.wikipedia.org/wiki/Juan_(nombre)" target="blank">Juan</a>
+							</td>
+							<td>Allí</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>
+								<a href="#h2" target="">Samuel</a>
+							</td>
+							<td>Aquí</td>
+						</tr>
+					</tbody>
+					<tfoot></tfoot>
+				</table>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aut commodi dicta incidunt ipsum molestiae natus provident quia recusandae? Adipisci consectetur corporis dicta iure, maxime placeat sint tempora vero?Dignissimos harum id iure nisi odit officia quaerat voluptas. Atque delectus dolorem eaque eligendi fugiat ipsum molestias, nobis odio officia omnis quisquam repudiandae sequi temporibus? Autem illum mollitia soluta suscipit.Accusantium amet aperiam autem eaque eligendi, enim esse excepturi, illum iste laboriosam, libero qui quos repellat sapiente similique tempore temporibus vel voluptatibus. Assumenda distinctio magni minima mollitia nisi rerum veritatis?
+				</p>
+
+
+			</div>
+		</div>
+	</div>
+
+	<footer></footer>
+
+</body>
+</html>
