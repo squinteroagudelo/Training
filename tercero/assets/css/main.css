@@ -64,6 +64,17 @@ a:not(.close):hover{
     color: orange;
 }
 
+.table tr td:last-child {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-edit{
+    color: #79185d;
+    cursor: pointer;
+}
+
 .title-item{
     font-size: 1.5em;
     padding-bottom: 1em;
